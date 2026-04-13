@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --wibo-primary: #3344E5;
+  --wibo-on-primary: #FAFAFA;
+  --wibo-surface: #FAFAFA;
+  --wibo-on-surface: #1D1D1D;
+  --wibo-on-surface-variant: #6E6E6E;
+  --wibo-secondary-container: #BCC2FF;
+  --wibo-on-secondary-container: #484E83;
+  --wibo-surface-container-high: #E8E8E8;
+  --wibo-surface-container-low: #F3F3F3;
+  --wibo-outline: #C3C3C3;
+  --wibo-outline-variant: #B0B0B1;
+  --wibo-dark-primary: #5061FF;
+  --wibo-dark: #1D1D1D;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-wibo-primary: var(--wibo-primary);
+  --color-wibo-on-primary: var(--wibo-on-primary);
+  --color-wibo-surface: var(--wibo-surface);
+  --color-wibo-on-surface: var(--wibo-on-surface);
+  --color-wibo-on-surface-variant: var(--wibo-on-surface-variant);
+  --color-wibo-secondary-container: var(--wibo-secondary-container);
+  --color-wibo-on-secondary-container: var(--wibo-on-secondary-container);
+  --color-wibo-surface-container-high: var(--wibo-surface-container-high);
+  --color-wibo-surface-container-low: var(--wibo-surface-container-low);
+  --color-wibo-outline: var(--wibo-outline);
+  --color-wibo-outline-variant: var(--wibo-outline-variant);
+  --color-wibo-dark-primary: var(--wibo-dark-primary);
+  --color-wibo-dark: var(--wibo-dark);
+  --font-sans: 'Inter', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--wibo-surface);
+  color: var(--wibo-on-surface);
 }
